@@ -21,7 +21,7 @@ int main(){
 
     printf("\nEnter pos to delete element : ");
     scanf("%d",&pos);
-    for(int i=pos;i<n;i++){
+    for(int i=pos-1;i<n;i++){
         arr[i] = arr[i+1];
     }
     
@@ -30,3 +30,4 @@ int main(){
         printf("%d ",arr[i]);
     }
 }
+
