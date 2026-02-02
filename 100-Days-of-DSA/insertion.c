@@ -1,5 +1,8 @@
 #include<stdio.h>
 int main(){
+
+    //Insert an element in array
+    
     int n;
     int pos,value;
     printf("Enter size of array : ");
@@ -22,11 +25,11 @@ int main(){
     printf("Enter element which you want to insert : ");
     scanf("%d",&value);
 
-    for(int i=n;i>pos;i--){
+    for(int i=n;i>=pos;i--){
         arr[i] = arr[i-1];
     }
 
-    arr[pos] = value;
+    arr[pos-1] = value;
 
     printf("Array after insertion : ");
     for(int i=0;i<n+1;i++){
