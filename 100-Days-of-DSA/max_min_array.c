@@ -1,5 +1,6 @@
 #include<Stdio.h>
 int main(){
+    // find out max and min element in array
     int n;
     printf("Enter size of array : ");
     scanf("%d",&n);
@@ -25,4 +26,5 @@ int main(){
 
     printf("Max element : %d\n",max);
     printf("Min element : %d",min);
+
 }
